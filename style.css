@@ -1,0 +1,393 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f9fbfd;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== HEADER & NAVBAR ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #6d9dc5;   /* soft teal-blue */
+  color: #fff;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.navbar a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffdab9;  /* peach highlight */
+}
+
+/* ===== HOME SECTION ===== */
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #e8f5ff, #f0faff);
+}
+
+.home-text {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.home-text h2 {
+  font-size: 2rem;
+  color: #334e68;
+}
+
+.home-text span {
+  color: #ff9aa2;  /* pastel pink highlight */
+}
+
+.home-text p {
+  margin: 15px 0;
+  font-size: 1.1rem;
+}
+
+.main-btn {
+  background: #ff9aa2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.main-btn:hover {
+  background: #ff6b81;
+}
+
+.home-img img {
+  max-width: 250px;
+  border-radius: 50%;
+  margin: 20px;
+  border: 4px solid #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* ===== ABOUT SECTION ===== */
+.about {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.about-content img {
+  width: 200px;
+  border-radius: 15px;
+  margin: 15px;
+}
+
+.about-content p {
+  max-width: 600px;
+  text-align: justify;
+  margin: 15px;
+}
+
+/* ===== PROFESSIONAL INFO ===== */
+.info {
+  background: #fff8fb;
+  padding: 40px 20px;
+  border-top: 2px solid #ff9aa2;
+}
+
+.info h2 {
+  text-align: center;
+  color: #334e68;
+  margin-bottom: 20px;
+}
+
+.info p {
+  text-align: center;
+  margin: 8px 0;
+}
+
+/* ===== SKILLS SECTION ===== */
+.skills {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+/* ===== EDUCATION ===== */
+.education {
+  background: #e8f5ff;
+  padding: 50px 20px;
+}
+
+.education h2 {
+  text-align: center;
+  color: #334e68;
+  margin-bottom: 20px;
+}
+
+.edu-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 15px;
+  margin: 15px auto;
+  padding: 15px;
+  max-width: 700px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+}
+
+.edu-card img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.edu-info h3 {
+  color: #6d9dc5;
+}
+
+/* ===== ACHIEVEMENTS ===== */
+#achievements {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.achievement {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.badge {
+  background: #ff9aa2;
+  color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* ===== HOBBIES ===== */
+.hobbies {
+  background: #fff8fb;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.hobbies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.hobby-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.hobby-card:hover {
+  transform: scale(1.05);
+}
+
+.hobby-card img {
+  width: 100%;
+  border-radius: 10px;
+  height: 130px;
+  object-fit: cover;
+}
+
+/* ===== CONTACT ===== */
+#contact {
+  background: #e0f7fa;
+  padding: 50px 20px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+.socials a {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.fb { background: #1877f2; }
+.gh { background: #333; }
+.li { background: #0a66c2; }
+
+.contact-form {
+  flex: 1;
+  min-width: 280px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+}
+
+.btn-send {
+  background: #6d9dc5;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.btn-send:hover {
+  background: #4b7a9e;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #6d9dc5;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  .navbar {
+    margin-top: 10px;
+  }
+
+  .home {
+    flex-direction: column;
+  }
+
+  .edu-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-grid {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .card img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .hobby-card img {
+    height: 100px;
+  }
+}
